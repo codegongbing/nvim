@@ -1,7 +1,8 @@
 {
   "suggest.triggerAfterInsertEnter": false,
   "suggest.timeout": 500,
-  "suggest.noselect": false,
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
   "suggest.detailField": "abbr",
   "suggest.snippetIndicator": "🌟",
   "suggest.triggerCompletionWait": 100,
