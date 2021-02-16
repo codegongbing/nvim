@@ -76,4 +76,28 @@ endif
 
 set secure
 
+let g:coc_global_extensions = [
+	\ 'coc-json',
+	\ 'coc-vimlsp',
+	\ 'coc-calc',
+	\ 'coc-clangd',
+	\ 'coc-css',
+	\ 'coc-git',
+	\ 'coc-go',
+	\ 'coc-highlight',
+	\ 'coc-fzf-preview',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-markdownlint',
+	\ 'coc-python',
+	\ 'coc-rls',
+	\ 'coc-rust-analyzer',
+	\ 'coc-rome',
+	\ 'coc-sh',
+	\ 'coc-stylelint',
+	\ 'coc-snippets',
+	\ 'coc-toml',
+	\ 'coc-yaml',
+	\ 'coc-sql'
+  \ ]
 " vim: set ts=2 sw=2 tw=80 noet :
