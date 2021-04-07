@@ -791,3 +791,17 @@ function! s:load_keybinds(plugins) abort
 endfunction
 
 call s:load_keybinds(s:plugins)
+
+"设置vim-switch快捷键
+let g:switch_mapping = "-"
+
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction

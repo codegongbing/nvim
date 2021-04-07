@@ -35,18 +35,21 @@
     "default": "\uf29c"
   },
   //diagnostic
-  "diagnostic.signOffset": 9999999,
-  "diagnostic.errorSign": "●",
-  "diagnostic.warningSign": "●",
-  "diagnostic.infoSign": "●",
+//  "diagnostic.signOffset": 9999999,
+  "diagnostic.errorSign": "\uf467",
+  "diagnostic.warningSign": "\uf071",
+  "diagnostic.infoSign": "\uf129",
+  "diagnostic.hintSign": "\uf864",
   "diagnostic.displayByAle": false,
   "diagnostic.refreshOnInsertMode": true,
-  "diagnostic.refreshAfterSave": false,
+//  "diagnostic.refreshAfterSave": false,
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualTextPrefix": " ❯❯❯ ",
   "diagnostic.virtualText": true,
 
   "codeLens.enable": true,
+
+  "python.jediEnabled": false,
 
   //git
   "git.enableGutters": true,
@@ -79,13 +82,21 @@
     "typescript",
     "typescriptreact",
     "go",
-    "json"
+    "json",
+    "rust",
+    "c",
+    "java",
+    "vue"
   ],
   "prettier.statusItemText": "ⓟ ",
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": false,
   "prettier.stylelintIntegration": true,
   "prettier.disableSuccessMessage": true,
+  "prettier.tabWidth": 4,
+  "prettier.bracketSpacing": true,
+  "prettier.trailingComma": "es5",
+  "prettier.useTabs": true,
   //emmet
   "emmet.includeLanguages": {
     "vue-html": "html",
