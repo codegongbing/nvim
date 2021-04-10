@@ -26,7 +26,9 @@
 - repo: tpope/vim-surround
 
 #快速切换true和false
-- repo: AndrewRadev/switch.vim
+- repo: tpope/vim-surround
+# fzf.vim
+- repo: junegunn/fzf.vim
 
 - repo: glepnir/dashboard-nvim
   hook_add: source  $VIM_PATH/modules/module-dashboard.vim

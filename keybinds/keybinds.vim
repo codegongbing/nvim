@@ -617,7 +617,7 @@ endfunction
 function! s:load_insertmap() abort
   " insert keymap like emacs
   inoremap <C-w> <C-[>diwa
-  inoremap <C-h> <BS>
+  "inoremap <C-h> <BS>
   inoremap <C-d> <Del>
   inoremap <C-k>  <ESC>d$a
   inoremap <C-u> <C-G>u<C-U>
@@ -639,7 +639,7 @@ function! s:load_commandmap() abort
   cnoremap <C-a> <Home>
   cnoremap <C-e> <End>
   cnoremap <C-d> <Del>
-  cnoremap <C-h> <BS>
+  "cnoremap <C-h> <BS>
   cnoremap <C-t> <C-R>=expand("%:p:h") . "/" <CR>
 endfunction
 
@@ -667,7 +667,7 @@ endfunction
 
 function! s:load_windowmap() abort
   "switch window
-  nnoremap <C-h> <C-w>h
+  "nnoremap <C-h> <C-w>h
   nnoremap <C-l> <C-w>l
   nnoremap <C-j> <C-w>j
   nnoremap <C-k> <C-w>k
@@ -805,3 +805,6 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+noremap <C-h> :History<CR>
+noremap <C-f> :FZF<CR>
