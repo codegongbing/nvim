@@ -76,6 +76,8 @@ endif
 
 set secure
 
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
 let g:coc_global_extensions = [
 	\ 'coc-json',
 	\ 'coc-vimlsp',
@@ -98,6 +100,7 @@ let g:coc_global_extensions = [
 	\ 'coc-snippets',
 	\ 'coc-toml',
 	\ 'coc-yaml',
-	\ 'coc-sql'
+	\ 'coc-sql',
+	\ 'coc-translator',
   \ ]
 " vim: set ts=2 sw=2 tw=80 noet :

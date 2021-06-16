@@ -26,7 +26,7 @@
 - repo: tpope/vim-surround
 
 #快速切换true和false
-- repo: tpope/vim-surround
+- repo: AndrewRadev/switch.vim
 # fzf.vim
 - repo: junegunn/fzf.vim
 

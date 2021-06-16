@@ -808,3 +808,5 @@ endfunction
 
 noremap <C-h> :History<CR>
 noremap <C-f> :FZF<CR>
+
+nnoremap tt :CocCommand translator.popup<CR>
