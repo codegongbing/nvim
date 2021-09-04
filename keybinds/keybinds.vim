@@ -68,12 +68,12 @@ function! s:load_bufkill() abort
   nmap <C-x>b :BD<CR>
   nmap <silent> <Leader>bn    <Plug>BufKillBack
   nmap <silent> <Leader>bp    <Plug>BufKillForward
-  nmap <silent> <Leader>bd    <Plug>BufKillBd
+  nmap <silent> <Leader>bk    <Plug>BufKillBd
   nmap <silent> <Leader>bu    <Plug>BufKillUndo
   if s:enable_whichkey
     let g:which_key_map.b.n = 'Next Buffer'
     let g:which_key_map.b.p = 'Prev Buffer'
-    let g:which_key_map.b.d = 'Kill Buffer'
+    let g:which_key_map.b.k = 'Kill Buffer'
     let g:which_key_map.b.u = 'Undo Kill'
   endif
 endfunction
@@ -196,8 +196,8 @@ function! s:load_coc() abort
     " Resume latest coc list
     nnoremap <silent> <Leader>'  :<C-u>CocListResume<CR>
     " Use `[e` and `]e` for navigate diagnostics
-    nmap <silent> ]e <Plug>(coc-diagnostic-prev)
-    nmap <silent> [e <Plug>(coc-diagnostic-next)
+    nmap <silent> [e <Plug>(coc-diagnostic-prev)
+    nmap <silent> ]e <Plug>(coc-diagnostic-next)
     " Remap for rename current word
     nmap <Leader>cn <Plug>(coc-rename)
     " Remap for format selected region
@@ -810,3 +810,4 @@ noremap <C-h> :History<CR>
 noremap <C-f> :FZF<CR>
 
 nnoremap tt :CocCommand translator.popup<CR>
+nmap <leader>rn <Plug>(coc-rename)
