@@ -16,6 +16,9 @@
 #- repo: hardcoreplayers/vim-buffet
 - repo: bagrat/vim-buffet
 
+# vim-buffet显示文件类型图标
+- repo: ryanoasis/vim-devicons
+
 #多光标
 - repo: mg979/vim-visual-multi
 
