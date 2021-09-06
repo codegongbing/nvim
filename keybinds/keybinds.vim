@@ -809,10 +809,13 @@ endfunction
 noremap <C-h> :History<CR>
 noremap <C-f> :FZF<CR>
 
-nnoremap tt :CocCommand translator.popup<CR>
+"nnoremap tt :CocCommand translator.popup<CR>
 nmap <leader>rn <Plug>(coc-rename)
 
 nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
 nmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
 xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
+
+nmap <silent>tt <Plug>TranslateW
+vmap <silent>tt <Plug>TranslateWV

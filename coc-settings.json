@@ -89,6 +89,7 @@
     "vue"
   ],
   "prettier.statusItemText": "ⓟ ",
+  "prettier.printWidth": 80,
   "prettier.eslintIntegration": true,
   "prettier.tslintIntegration": false,
   "prettier.stylelintIntegration": true,

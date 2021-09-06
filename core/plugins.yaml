@@ -16,6 +16,9 @@
 #- repo: hardcoreplayers/vim-buffet
 - repo: bagrat/vim-buffet
 
+# vim翻译插件
+- repo: voldikss/vim-translator
+
 # vim-buffet显示文件类型图标
 - repo: ryanoasis/vim-devicons
 
