@@ -293,3 +293,4 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " }}}
 
 " vim: set foldmethod=marker ts=2 sw=2 tw=80 noet :
+set rtp+=/usr/local/opt/fzf

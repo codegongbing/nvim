@@ -819,9 +819,3 @@ xmap <silent> <S-TAB> <Plug>(coc-range-select-backword)
 
 nmap <silent>tt <Plug>TranslateW
 vmap <silent>tt <Plug>TranslateWV
-
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {<CR>}<ESC>O

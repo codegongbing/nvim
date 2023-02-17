@@ -11,12 +11,6 @@ let $THINKVIM = expand($HOME.'/.thinkvim.d')
 " set the user config file
 let s:user_init_config = expand($THINKVIM.'/init.vim')
 
-" 加载vim-devicons
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
-let g:webdevicons_enable_airline_tabline = 1
-let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
-
 " Disable vim distribution plugins
 let g:loaded_gzip = 1
 let g:loaded_tar = 1
@@ -97,7 +91,6 @@ let g:coc_global_extensions = [
 	\ 'coc-html',
 	\ 'coc-json',
 	\ 'coc-markdownlint',
-	\ 'coc-python',
 	\ 'coc-prettier',
 	\ 'coc-rls',
 	\ 'coc-rust-analyzer',
@@ -112,8 +105,16 @@ let g:coc_global_extensions = [
   \ ]
 " vim: set ts=2 sw=2 tw=80 noet :
 
+" 加载vim-devicons
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_airline_tabline = 1
+let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
+
+
 let g:buffet_powerline_separators = 1
 let g:buffet_show_index = 1
+let g:buffet_tab_icon = ''
 let g:buffet_use_devicons = 1
 let g:buffet_left_trunc_icon = "\uf0a8"
 let g:buffet_right_trunc_icon = "\uf0a9"

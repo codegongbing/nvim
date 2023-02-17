@@ -19,9 +19,6 @@
 # vim翻译插件
 - repo: voldikss/vim-translator
 
-# vim-buffet显示文件类型图标
-- repo: ryanoasis/vim-devicons
-
 #多光标
 - repo: mg979/vim-visual-multi
 
@@ -33,8 +30,11 @@
 
 #快速切换true和false
 - repo: AndrewRadev/switch.vim
+
 # fzf.vim
 - repo: junegunn/fzf.vim
+
+- repo: github/copilot.vim
 
 - repo: glepnir/dashboard-nvim
   hook_add: source  $VIM_PATH/modules/module-dashboard.vim
